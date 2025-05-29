@@ -1,43 +1,43 @@
-## Step 4: Using GitHub Copilot within a pull request
+## ステップ4: プルリクエスト内でGitHub Copilotを使用する
 
-Congratulations! You are finished with coding for this exercise (and VS Code). Now it's time to merge our work. :tada: To wrap up, let's learn about two limited-access Copilot features that can speed up our pull requests!
+おめでとうございます！この演習のコーディング（およびVS Codeでの作業）は完了です。今度は作業内容をマージする時間です。:tada: 最後に、プルリクエストを高速化できる2つのアクセス制限のあるCopilot機能について学びましょう！
 
-#### Copilot pull request summaries
+#### Copilotプルリクエストの要約
 
-Typically, you would review your notes and commit messages then summarize them for your pull request description. This may take some time, especially if commit messages are inconsistent or code is not documented well. Fortunately, Copilot can consider all changes in the pull request and provide the important highlights, and with references too!
-
-> [!NOTE]  
-> This feature is not available in **GitHub Copilot Free**. [[docs]](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/using-github-copilot-for-pull-requests/creating-a-pull-request-summary-with-github-copilot)
-
-#### Copilot code review
-
-More eyes on our work is always useful so let's ask Copilot to do a first pass before we do a normal peer review process. Copilot is great at catching common mistakes that are fixed by simple adjustments, but please remember to use it responsibly.
+通常、メモやコミットメッセージを確認し、それらをプルリクエストの説明用に要約します。これは、特にコミットメッセージに一貫性がなかったり、コードが十分に文書化されていなかったりする場合、時間がかかることがあります。幸いなことに、Copilotはプルリクエスト内のすべての変更を考慮し、重要なハイライトを（参照付きで！）提供できます。
 
 > [!NOTE]  
-> This feature is not available in **GitHub Copilot Free**. [[docs]](https://docs.github.com/en/copilot/using-github-copilot/code-review/using-copilot-code-review)
+> この機能は**GitHub Copilot Free**では利用できません。[[ドキュメント]](https://docs.github.com/ja/enterprise-cloud@latest/copilot/using-github-copilot/using-github-copilot-for-pull-requests/creating-a-pull-request-summary-with-github-copilot)
 
-### :keyboard: Activity: Summarize and review a PR with Copilot
+#### Copilotコードレビュー
 
-Both **Copilot pull request summaries** and **Copilot code review** have limited access, so this activity is mostly optional. If you have access, Mona will gladly check your work though! If not, you can skip the optional steps.
+作業に対するより多くの目は常に役立つので、通常のピアレビュープロセスを行う前に、Copilotに最初のパスを実行してもらいましょう。Copilotは簡単な調整で修正できる一般的な間違いを捉えるのに優れていますが、責任を持って使用することを忘れないでください。
 
-1. In a web browser, open another tab and navigate to your exercise repository.
+> [!NOTE]  
+> この機能は**GitHub Copilot Free**では利用できません。[[ドキュメント]](https://docs.github.com/ja/copilot/using-github-copilot/code-review/using-copilot-code-review)
 
-1. You might notice a **notification banner** suggesting to create a new pull request. Click that or use the **Pull Requests** tab at the top to create a new pull request. Please use the following details:
+### :keyboard: アクティビティ: CopilotでPRを要約・レビューする
+
+**Copilotプルリクエストの要約**と**Copilotコードレビュー**はどちらもアクセスが制限されているため、このアクティビティはほとんど任意です。アクセス権をお持ちであれば、Monaが喜んで作業を確認します！そうでない場合は、任意のステップをスキップできます。
+
+1. ウェブブラウザで別のタブを開き、演習リポジトリに移動します。
+
+1. 新しいプルリクエストの作成を提案する**通知バナー**に気づくかもしれません。それをクリックするか、上部の**プルリクエスト**タブを使用して新しいプルリクエストを作成します。以下の詳細を使用してください：
 
    - **base:** `main`
    - **compare:** `accelerate-with-copilot`
-   - **title:** `Add registration validation and more activities`
+   - **title:** `登録検証とアクティビティの追加`
 
-1. (Optional) In the **Add a description** area, enter edit mode if needed, then click the **Copilot actions** icon and **Summary** action. After a moment, Copilot will add a description. :memo:
+1. (任意) **説明を追加**エリアで、必要に応じて編集モードに入り、**Copilotアクション**アイコンと**要約**アクションをクリックします。しばらくすると、Copilotが説明を追加します。:memo:
 
-   <img alt="Copilot summarize button " width="300px" src="https://github.com/user-attachments/assets/3fc5fab4-db03-4ab8-8a16-cdd71ec2ded0">
+   <img alt="Copilot要約ボタン " width="300px" src="https://github.com/user-attachments/assets/3fc5fab4-db03-4ab8-8a16-cdd71ec2ded0">
 
-1. (Optional) In the right side information panel at the top, locate the **Reviewers** section and click the **Request** button next to a **Copilot icon**. Wait a moment for Copilot to add a review comment to your pull request!
+1. (任意) 右側の情報パネルの上部にある**レビュー担当者**セクションを見つけ、**Copilotアイコン**の隣にある**リクエスト**ボタンをクリックします。Copilotがプルリクエストにレビューコメントを追加するまでしばらく待ちます！
 
-   <img alt="Copilot review button" width="300px" src="https://github.com/user-attachments/assets/39b15002-a235-4c25-b09d-6a8097e27b62">
+   <img alt="Copilotレビューボタン" width="300px" src="https://github.com/user-attachments/assets/39b15002-a235-4c25-b09d-6a8097e27b62">
 
-   > **Tip:** Notice a log entry that Copilot was requested for a review.
+   > **ヒント:** Copilotにレビューがリクエストされたというログエントリに注目してください。
 
-1. At the bottom, press the **Merge pull request** button. Nice work! You are all done! :tada:
+1. 下部にある**プルリクエストのマージ**ボタンを押します。素晴らしい！これで完了です！ :tada:
 
-1. Wait a moment for Mona to check your work, provide feedback, and post a final review of this lesson!
+1. Monaがあなたの作業を確認し、フィードバックを提供し、このレッスンの最終レビューを投稿するまでしばらくお待ちください！

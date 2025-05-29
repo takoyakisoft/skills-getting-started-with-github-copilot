@@ -1,173 +1,173 @@
-## Step 2: Getting work done with Copilot
+## ステップ2: Copilotで作業をこなす
 
-In the previous step, GitHub Copilot was able to help us onboard to the project. That alone is a huge time saver, but now let's get some work done!
+前のステップでは、GitHub Copilotがプロジェクトへのオンボーディングを手伝ってくれました。それだけでも大幅な時間節約になりますが、今度は実際に作業を進めましょう！
 
-We recently learned there is a bug where students are registering for the same activities twice. That simply isn't acceptable, so let's get it fixed!
+最近、生徒が同じアクティビティに2回登録してしまうというバグがあることがわかりました。これは許容できないので、修正しましょう！
 
-Unfortunately, we were given little information to solve this problem. So, let's enlist Copilot to help find the problem area and get a potential solution made.
+残念ながら、この問題を解決するための情報はほとんど与えられていません。そこで、Copilotに問題箇所を見つけてもらい、潜在的な解決策を作成してもらいましょう。
 
-But before we do that, let's learn a bit more about Copilot! 🧑‍🚀
+しかし、その前に、Copilotについてもう少し学びましょう！ 🧑‍🚀
 
-### How does Copilot work?
+### Copilotはどのように機能しますか？
 
-In short, you can think of Copilot like a very specialized coworker. To be effective with them, you need to provide them background (context) and clear direction (prompts). Additionally, different people are better at different things because of their unique experiences (models).
+簡単に言えば、Copilotは非常に専門的な同僚のようなものだと考えることができます。彼らと効果的に作業するには、背景（コンテキスト）と明確な指示（プロンプト）を提供する必要があります。さらに、人によって得意なことは異なり、それは彼らのユニークな経験（モデル）によるものです。
 
-- **How do we provide context?:** In our coding environment, Copilot will automatically consider nearby code and open tabs. If you are using chat, you can also explicitly refer to files.
+- **コンテキストの提供方法:** コーディング環境では、Copilotは自動的に近くのコードや開いているタブを考慮します。チャットを使用している場合は、明示的にファイルを参照することもできます。
 
-- **What model should we pick?:** For our exercise, it shouldn't matter too much. Experimenting with different models is part of the fun! That's another lesson! 🤖
+- **どのモデルを選ぶべきか:** この演習では、それほど重要ではありません。さまざまなモデルを試すのは楽しみの一つです！それはまた別のレッスンです！ 🤖
 
-- **How do I make prompts?:** Being explicit and clear helps Copilot do the best job. But unlike some traditional systems, you can always clarify your direction with followup prompts.
+- **プロンプトの作成方法:** 明確かつ具体的に指示することで、Copilotは最善の仕事をしてくれます。ただし、従来のシステムとは異なり、フォローアップのプロンプトでいつでも指示を明確にすることができます。
 
 > [!TIP]
-> There several other ways to supplement Copilot's knowledge and capabilities like [chat participants](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants), [chat variables](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables), [slash commands](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1), and [MCP tools](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
+> Copilotの知識と能力を補う方法は他にもいくつかあります。たとえば、[チャット参加者](https://docs.github.com/ja/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants)、[チャット変数](https://docs.github.com/ja/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables)、[スラッシュコマンド](https://docs.github.com/ja/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1)、[MCPツール](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)などです。
 
-### :keyboard: Activity: Use Copilot to fix our registration bug :bug:
+### :keyboard: アクティビティ: Copilotを使って登録バグを修正する :bug:
 
-1. Let's ask Copilot to suggest where our bug might be coming from. Open the **Copilot Chat** panel in **Ask mode** and ask the following.
+1. Copilotにバグの原因箇所を提案してもらいましょう。**Copilotチャット**パネルを**Askモード**で開き、以下のように質問します。
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   > ![静的バッジ](https://img.shields.io/badge/-プロンプト-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > @workspace Students are able to register twice for an activity.
-   > Where could this bug be coming from?
+   > @workspace 学生がアクティビティに2回登録できてしまいます。
+   > このバグはどこから来ている可能性がありますか？
    > ```
 
    <details>
-   <summary>What is @workspace?</summary>
+   <summary>@workspaceとは何ですか？</summary>
 
-   Great question! This is a specialized [chat participant](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants) that will explore the project repository and try to include relevant additional context.
+   素晴らしい質問です！これは特殊な[チャット参加者](https://docs.github.com/ja/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants)で、プロジェクトリポジトリを探索し、関連する追加のコンテキストを含めようとします。
 
    </details>
 
-1. Now that we know the issue is in the `src/app.py` file and the `signup_for_activity` method, let's follow Copilot's recommendation and go fix it (semi-manually). We'll start with a comment and let Copilot finish the correction.
+1. 問題が`src/app.py`ファイルと`signup_for_activity`メソッドにあることがわかったので、Copilotの推奨に従って（半手動で）修正しましょう。まずコメントを追加し、Copilotに修正を完了させます。
 
-   1. In VS Code, select the file **Explorer tab** to show the project files and open the `src/app.py` file.
+   1. VS Codeで、ファイルの**エクスプローラータブ**を選択してプロジェクトファイルを表示し、`src/app.py`ファイルを開きます。
 
-   1. Scroll near the bottom of the file and find the `signup_for_activity` method.
+   1. ファイルの下部近くまでスクロールし、`signup_for_activity`メソッドを見つけます。
 
-   1. Find the comment line that describes adding a student. Above this is where it seems logical to do our registration check.
+   1. 生徒の追加を説明するコメント行を見つけます。この上の行が、登録チェックを行うのに論理的な場所と思われます。
 
-   1. Enter the below comment and press enter to go to the next line. After a moment, temporary shadow text will appear with a suggestion from Copilot! Nice! :tada:
+   1. 以下のコメントを入力し、Enterキーを押して次の行に進みます。しばらくすると、Copilotからの提案とともに一時的なシャドウテキストが表示されます！素晴らしい！ :tada:
 
       ```python
-      # Validate student is not already signed up
+      # 生徒が既に登録されていないか検証する
       ```
 
-   1. Press `Tab` to accept Copilot's suggestion and convert the shadow text to code.
+   1. `Tab`キーを押してCopilotの提案を受け入れ、シャドウテキストをコードに変換します。
 
-      > **Tip:** If you would like to see other suggestions, instead of pressing `Tab`, hover over the shadow text suggestion and a toolbar will appear. Use the arrows to select other suggestions or the three dots `...` and `Open Completions Panel` option to show all suggestions in a dedicated panel.
+      > **ヒント:** 他の提案を見たい場合は、`Tab`キーを押す代わりに、シャドウテキストの提案にカーソルを合わせるとツールバーが表示されます。矢印を使用して他の提案を選択するか、3つのドット`...`と`補完パネルを開く`オプションを選択して、専用パネルにすべての提案を表示します。
 
    <details>
-   <summary>Example Results</summary><br/>
+   <summary>結果の例</summary><br/>
 
-   Copilot is growing every day and may not always produce the same results. If you are unhappy with the suggestions, here is an example of a valid suggestion result we produced during the making of this exercise. You can use it to continue forward.
+   Copilotは日々進化しており、常に同じ結果を生成するとは限りません。提案に満足できない場合は、この演習の作成中に生成した有効な提案結果の例を次に示します。これを使用して続行できます。
 
    ```python
    @app.post("/activities/{activity_name}/signup")
    def signup_for_activity(activity_name: str, email: str):
-      """Sign up a student for an activity"""
-      # Validate activity exists
+      """生徒をアクティビティに登録する"""
+      # アクティビティが存在するか検証
       if activity_name not in activities:
-         raise HTTPException(status_code=404, detail="Activity not found")
+         raise HTTPException(status_code=404, detail="アクティビティが見つかりません")
 
-      # Get the activity
+      # アクティビティを取得
       activity = activities[activity_name]
 
-      # Validate student is not already signed up
+      # 生徒が既に登録されていないか検証
       if email in activity["participants"]:
-        raise HTTPException(status_code=400, detail="Student is already signed up")
+        raise HTTPException(status_code=400, detail="生徒は既に登録されています")
 
-      # Add student
+      # 生徒を追加
       activity["participants"].append(email)
-      return {"message": f"Signed up {email} for {activity_name}"}
+      return {"message": f"{email} を {activity_name} に登録しました"}
    ```
 
    </details>
 
-### :keyboard: Activity: Let Copilot generate sample data 📋
+### :keyboard: アクティビティ: Copilotにサンプルデータを生成させる 📋
 
-In new project developments, it's often helpful to have some realistic looking fake data for testing. Copilot is excellent at this task, so let's add some more sample activities and introduce another way to interact with Copilot using **Inline Chat**
+新しいプロジェクト開発では、テスト用に現実的な見た目の偽データがあると便利なことがよくあります。Copilotはこのタスクに非常に優れているので、さらにいくつかサンプルアクティビティを追加し、**インラインチャット**を使用してCopilotと対話する別の方法を紹介しましょう。
 
-**Inline Chat** and the **Copilot Chat** panel are very similar tools, but with slightly different automatic context. As such, while Copilot Chat is good at explaining about the project, inline chat might feel more natural for asking about a particular line or function.
+**インラインチャット**と**Copilotチャット**パネルは非常によく似たツールですが、自動コンテキストが若干異なります。そのため、Copilotチャットはプロジェクトについて説明するのに適していますが、インラインチャットは特定の行や関数について質問するのにより自然に感じるかもしれません。
 
-1. If not already open, open the `src/app.py` file.
+1. まだ開いていない場合は、`src/app.py`ファイルを開きます。
 
-1. Near the top (about line 23), find the `activities` variable, where our example extracurricular activities are configured.
+1. 上部（23行目あたり）で、サンプルの課外活動が設定されている`activities`変数を見つけます。
 
-1. Click on any of the related lines and bring up Copilot inline chat by using the keyboard command `Ctrl + I` (windows) or `Cmd + I` (mac).
+1. 関連する行のいずれかをクリックし、キーボードコマンド`Ctrl + I`（Windows）または`Cmd + I`（Mac）を使用してCopilotインラインチャットを表示します。
 
-   > **Tip:** Another way to bring up Copilot inline chat is: `right click` on any of the selected lines -> `Copilot` -> `Editor Inline Chat`.
+   > **ヒント:** Copilotインラインチャットを表示する別の方法は、選択した行のいずれかを`右クリック` -> `Copilot` -> `エディタインラインチャット`です。
 
-1. Enter the following prompt text and press enter or the **Send and Dispatch** button.
+1. 以下のプロンプトテキストを入力し、Enterキーを押すか、**送信してディスパッチ**ボタンを押します。
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   > ![静的バッジ](https://img.shields.io/badge/-プロンプト-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Add 2 more sports related activities, 2 more artistic
-   > activities, and 2 more intellectual activities.
+   > スポーツ関連のアクティビティを2つ、芸術関連の
+   > アクティビティを2つ、知的なアクティビティを2つ追加してください。
    > ```
 
-1. After a moment, Copilot will directly start making changes to the code. The changes will be stylized differently to make any additions and removals easy to identify. Take a moment to inspect and then press the **Accept** button.
+1. しばらくすると、Copilotは直接コードの変更を開始します。変更は、追加と削除を簡単に識別できるように、異なるスタイルで表示されます。少し時間を取って確認し、**承認**ボタンを押します。
 
    <details>
-   <summary>Example Results</summary><br/>
+   <summary>結果の例</summary><br/>
 
-   Copilot is growing every day and may not always produce the same results. If you are unhappy with the suggestions, here is an example result we produced during the making of this exercise. You can use it to continue forward, if having trouble.
+   Copilotは日々進化しており、常に同じ結果を生成するとは限りません。提案に満足できない場合は、この演習の作成中に生成した結果の例を次に示します。困った場合は、これを使用して続行できます。
 
    ```python
-   # In-memory activity database
+   # インメモリ活動データベース
    activities = {
-      "Chess Club": {
-         "description": "Learn strategies and compete in chess tournaments",
-         "schedule": "Fridays, 3:30 PM - 5:00 PM",
-         "max_participants": 12,
+      "Chess Club": { # チェスクラブ
+         "description": "戦略を学び、チェストーナメントで競う",
+         "schedule": "金曜日、午後3時30分～午後5時",
+         "max_participants": 12, # 最大参加者数
          "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
       },
-      "Programming Class": {
-         "description": "Learn programming fundamentals and build software projects",
-         "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
+      "Programming Class": { # プログラミング教室
+         "description": "プログラミングの基礎を学び、ソフトウェアプロジェクトを構築する",
+         "schedule": "火曜日と木曜日、午後3時30分～午後4時30分",
          "max_participants": 20,
          "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
       },
-      "Gym Class": {
-         "description": "Physical education and sports activities",
-         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
+      "Gym Class": { # 体育の授業
+         "description": "体育およびスポーツ活動",
+         "schedule": "月曜日、水曜日、金曜日、午後2時～午後3時",
          "max_participants": 30,
          "participants": ["john@mergington.edu", "olivia@mergington.edu"]
       },
-      "Basketball Team": {
-         "description": "Competitive basketball training and games",
-         "schedule": "Tuesdays and Thursdays, 4:00 PM - 6:00 PM",
+      "Basketball Team": { # バスケットボールチーム
+         "description": "競技バスケットボールのトレーニングと試合",
+         "schedule": "火曜日と木曜日、午後4時～午後6時",
          "max_participants": 15,
          "participants": []
       },
-      "Swimming Club": {
-         "description": "Swimming training and water sports",
-         "schedule": "Mondays and Wednesdays, 3:30 PM - 5:00 PM",
+      "Swimming Club": { # 水泳クラブ
+         "description": "水泳トレーニングとウォータースポーツ",
+         "schedule": "月曜日と水曜日、午後3時30分～午後5時",
          "max_participants": 20,
          "participants": []
       },
-      "Art Studio": {
-         "description": "Express creativity through painting and drawing",
-         "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+      "Art Studio": { # アートスタジオ
+         "description": "絵画やデッサンを通じて創造性を表現する",
+         "schedule": "水曜日、午後3時30分～午後5時",
          "max_participants": 15,
          "participants": []
       },
-      "Drama Club": {
-         "description": "Theater arts and performance training",
-         "schedule": "Tuesdays, 4:00 PM - 6:00 PM",
+      "Drama Club": { # 演劇部
+         "description": "舞台芸術とパフォーマンストレーニング",
+         "schedule": "火曜日、午後4時～午後6時",
          "max_participants": 25,
          "participants": []
       },
-      "Debate Team": {
-         "description": "Learn public speaking and argumentation skills",
-         "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+      "Debate Team": { # ディベートチーム
+         "description": "パブリックスピーキングと議論のスキルを学ぶ",
+         "schedule": "木曜日、午後3時30分～午後5時",
          "max_participants": 16,
          "participants": []
       },
-      "Science Club": {
-         "description": "Hands-on experiments and scientific exploration",
-         "schedule": "Fridays, 3:30 PM - 5:00 PM",
+      "Science Club": { # 科学クラブ
+         "description": "実践的な実験と科学的探求",
+         "schedule": "金曜日、午後3時30分～午後5時",
          "max_participants": 20,
          "participants": []
       }
@@ -176,33 +176,33 @@ In new project developments, it's often helpful to have some realistic looking f
 
    </details>
 
-### :keyboard: Activity: Use Copilot to describe our work 💬
+### :keyboard: アクティビティ: Copilotを使って作業内容を記述する 💬
 
-Nice work fixing that bug and expanding the example activities! Now let's get our work committed and pushed to GitHub, again with the help of Copilot!
+バグを修正し、サンプルアクティビティを拡張してくれてありがとう！今度は、Copilotの助けを借りて、作業内容をコミットしてGitHubにプッシュしましょう！
 
-1. In the left sidebar, select the `Source Control` tab.
+1. 左側のサイドバーで、`ソース管理`タブを選択します。
 
-   > **Tip:** Opening a file from the source control area will show the differences to the original rather than simply opening it.
+   > **ヒント:** ソース管理領域からファイルを開くと、単にファイルを開くのではなく、オリジナルとの差分が表示されます。
 
-1. Find the `app.py` file and press the `+` sign to collect your changes together in the staging area.
+1. `app.py`ファイルを見つけ、`+`記号を押して変更をステージングエリアにまとめます。
 
-   ![image](https://github.com/user-attachments/assets/7d3daf4e-4125-4775-88a7-33251cd7293e)
+   ![画像](https://github.com/user-attachments/assets/7d3daf4e-4125-4775-88a7-33251cd7293e)
 
-1. Above the list of staged changes, find the **Message** text box, but **don't enter anything** for now.
+1. ステージされた変更のリストの上にある**メッセージ**テキストボックスを見つけますが、今は**何も入力しないでください**。
 
-   - Typically, you would write a short description of the changes here, but now we have Copilot to help out!
+   - 通常は、ここに変更の簡単な説明を書きますが、今はCopilotが手伝ってくれます！
 
-1. To the right of the **Message** text box, find and click the **Generate Commit Message with Copilot** button (sparkles icon).
+1. **メッセージ**テキストボックスの右側にある**Copilotでコミットメッセージを生成**ボタン（キラキラアイコン）を見つけてクリックします。
 
-1. Press the **Commit** button and **Sync Changes** button to push your changes to GitHub.
+1. **コミット**ボタンと**変更を同期**ボタンを押して、変更をGitHubにプッシュします。
 
-1. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. Monaがあなたの作業を確認し、フィードバックを提供し、次のレッスンを共有するまでしばらく待ちます。
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>困っていますか？ 🤷</summary><br/>
 
-If you don't get feedback, here are some things to check:
+フィードバックが得られない場合は、次の点を確認してください：
 
-- Make sure your pushed the `src/app.py` file changes to the branch `accelerate-with-copilot`.
+- `src/app.py`ファイルの変更をブランチ`accelerate-with-copilot`にプッシュしたことを確認してください。
 
 </details>
